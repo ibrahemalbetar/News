@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.news.app.R;
 import com.news.app.models.NewsItem;
+import com.news.app.utils.Constants;
 
 import java.util.List;
 
@@ -59,15 +60,15 @@ public class MainActivity extends AppCompatActivity implements MainView {
         // automatically handle clicks
         int id = item.getItemId();
         if (id == R.id.action_refresh) {
-            presenter.updateNewsData(1);
+            presenter.updateNewsData(Constants.DAILY_NEWS);
             return true;
         }
         if (id == R.id.action_monthly_news) {
-            presenter.updateNewsData(30);
+            presenter.updateNewsData(Constants.MONTHLY_NEWS);
             return true;
         }
         if (id == R.id.action_weekly_news) {
-            presenter.updateNewsData(7);
+            presenter.updateNewsData(Constants.WEEKLY_NEWS);
             return true;
         }
 
