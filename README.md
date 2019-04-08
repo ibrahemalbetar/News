@@ -62,7 +62,7 @@ lintOptions {
 You can specify your lint checking preferences in the lint.xml file. If you are creating this file manually, place it in the root directory of your Android project.
 The lint.xml file consists of an enclosing <lint> parent tag that contains one or more children <issue> elements. Lint defines a unique id attribute value for each <issue>.
 You can change an issue's severity level or disable lint checking for the issue by setting the severity attribute in the <issue> tag.
-- Output file
+- Output file:
 When the lint tool completes its checks, it provides paths to the XML and HTML versions of the lint report. You can then navigate to the HTML report and open it in your browser, you will
 this file under the root directory.
 
