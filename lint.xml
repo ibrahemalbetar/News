@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Disable the given check in this project -->
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+    
+    <issue id="IconLocation" severity="ignore"/>
+
+    <!-- Change the severity of hardcoded strings to "ignore" -->
+    <issue id="HardcodedText" severity="ignore" />
+
+    <issue id="ContentDescription" severity="ignore" />
+
+    <issue id="ObsoleteLintCustomCheck" severity="ignore" />
+
+    <issue id="GradleDependency">
+        <ignore regexp="butterknife" />
+    </issue>
+
+
+</lint>
